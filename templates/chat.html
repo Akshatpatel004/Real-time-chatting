@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatting</title>
+    <script  src="socket.io/socket.io.js"></script>
+    <script src="chat.js"></script>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <div class="container">
+        <div class="messagebox" id="messagebox">
+            <!-- <p class="message left">How are you</p>
+            <p class="message right">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, tenetur numquam perferendis labore repudiandae voluptates fugit minus ea itaque eius commodi magni voluptatem molestias provident magnam nihil, voluptate sunt cum.</p>
+            <p class="message center">How are you</p> -->
+
+        </div>
+        <div class="element">
+            <form action="/submit" method="post" id="form">
+                <input type="text" name="msg" id="txtmessage" class="txtmessage">
+                <input type="submit" class="btnsubmit" value="send">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
